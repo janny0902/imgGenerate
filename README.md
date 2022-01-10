@@ -36,4 +36,11 @@ viewer = pannellum.viewer('panorama', { <br>
    - python generate.py -o al_USE_001 -n C:\dev\bin\nona.exe E:\panorama_view\03.AIRVIEW_USE\al\al_001.JPG
    - 해당 이미지 / 데이터 값을 이용하여 서비스
 
+-o output 폴더명
+-n nona.exe 경로
+E: 고해상도 이미지 경로
+
+해당 폴더에 분할된 이미지가 나옴.  JSON 파일을 확인하여 cubeResolution, maxLevel, tileResolution 3개값을 확인하여 
+서비스 구축
+
 
