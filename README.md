@@ -5,23 +5,23 @@
 Pannellum 라이브러리중
 multires 옵션 type 을 사용 하고
 
-ex:)
-viewer = pannellum.viewer('panorama', {
-    "type": "multires",
-	"autoLoad": true,
-	"compass": true,
-	"autoLoad": true,
-	"pitch":p,
-	"yaw":y,
-    "multiRes": {
-        "basePath":current_img,
-        "path": "/%l/%s%y_%x",
-        "fallbackPath": "/fallback/%s",
-        "extension": "jpg",
-        "tileResolution": 512,
-        "maxLevel": 4,
-        "cubeResolution": 3496
-    },
+ex:)<br>
+viewer = pannellum.viewer('panorama', { <br>
+    "type": "multires",<br>
+	"autoLoad": true,<br>
+	"compass": true,<br>
+	"autoLoad": true,<br>
+	"pitch":p,<br>
+	"yaw":y,<br>
+    "multiRes": {<br>
+        "basePath":current_img,<br>
+        "path": "/%l/%s%y_%x",<br>
+        "fallbackPath": "/fallback/%s",<br>
+        "extension": "jpg",<br>
+        "tileResolution": 512,<br>
+        "maxLevel": 4,<br>
+        "cubeResolution": 3496<br>
+    }, <br>
     
 예제를 참고하여 분할한 이미지 사용
 
