@@ -8,19 +8,19 @@ multires 옵션 type 을 사용 하고
 ex:)<br>
 viewer = pannellum.viewer('panorama', { <br>
     &nbsp;&nbsp;"type": "multires",<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;"autoLoad": true,<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;"compass": true,<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;"autoLoad": true,<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;"pitch":p,<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;"yaw":y,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autoLoad": true,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"compass": true,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autoLoad": true,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"pitch":p,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"yaw":y,<br>
     &nbsp;&nbsp;"multiRes": {<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"basePath":current_img,<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"path": "/%l/%s%y_%x",<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"fallbackPath": "/fallback/%s",<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"extension": "jpg",<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"tileResolution": 512,<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"maxLevel": 4,<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;"cubeResolution": 3496<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"basePath":current_img,<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"path": "/%l/%s%y_%x",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fallbackPath": "/fallback/%s",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"extension": "jpg",<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"tileResolution": 512,<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"maxLevel": 4,<br>
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"cubeResolution": 3496<br>
     }, <br>
     
 예제를 참고하여 분할한 이미지 사용
