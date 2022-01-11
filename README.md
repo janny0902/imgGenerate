@@ -44,3 +44,37 @@ E: 고해상도 이미지 경로
 서비스 구축
 
 
+3.panorama_renew.jsp
+ mvc 패턴으로 백단 컨트롤러 서비스 dao 등 필요  db연결해서 가져오는 형태  
+ 
+4.DB 컬럼
+ 1. SEQ :순번
+ 2. K_NAME : 한글명 - 파노라마 타이틀에 들어감
+ 3. E_NAME : 영문명 - 필터 해당 선택자
+ 4. PIC_NUM : 사진번호 - 해당 사진의 번호 
+ 5. PITCH_DATA : 이미지에 대한 위치 (X)
+ 6. YAW_DATA : 이미지에 대한 위치 (Y)
+ 7. TYPE : scene , info , equirectangular ,multires 데이터를 넣으면  해당 버튼이 표시됨
+   scene : 이동 링크
+   info  : 설명 문구
+   equirectangular : 이미지 정적 표시
+   multires : 다 해상도 이미지 표시
+   
+ 8. TEXT : 링크 또는 설명 문구에 표시될 문구
+ 9. URL : info 에서 문구 클릭시 이동될 페이지 URL
+ 10. IMAGEPATH : 파노라마 이미지 위치 EX)/images/oleum_Panorama/gama/gama_001.JPG  OR /images/oleum_Panorama/gama/001   (multires)
+ 11. X-COORD : 구글좌표 X값  (다음 지도API 연동)
+ 12. Y-COORD : 구글좌표 Y값  (다음 지도API 연동)
+ 13. TILE_RESOLUTION : multires 타입일 경우 해당 분할 픽셀
+ 14. MAX_LEVEL : multires 타입일 경우 줌인 줌아웃 레벨 설정
+ 15. CUBE_RESOLUTION : multires 타입일경우 분할 픽셀 수
+
+13,14,15 인경우 2 번 Generate.py  실행하면 JSON 파일 도출됨. 해당 도출된 JSON 파일 안에 값이 있음 해당값을 DB에 저장 - 그래야 깨지지 않음
+
+multires 가 아닌경우 2, 13,14,15 해당 안됨
+
+equirectangular  : 몇장 안되는 뷰어를 만들때 사용,  파노라마 불러올때 1장을 전체 불러옴  메모리 = 이미지 용량 정도됨.  몇장 안되면 그냥 사용하면됨 편함
+multires  :여러장을 링크로 연결 하여 보여줄떄 (로드뷰 경우) 1장 = 1MB 일경우 메모리 제한에 걸려 블렉아웃 됨. 그래서 해상도를 분할하여 최소한의 리소스를 사용하도록 하는 타입 (보여지는 부분만 로딩하여 사용자에게 제공)
+   
+ 
+ 
