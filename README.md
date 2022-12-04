@@ -4,7 +4,7 @@
 
 Pannellum 라이브러리중
 multires 옵션 type 을 사용 하고
-
+```python
 ex:)<br>
 viewer = pannellum.viewer('panorama', { <br>
     &nbsp;&nbsp;"type": "multires",<br>
@@ -22,7 +22,7 @@ viewer = pannellum.viewer('panorama', { <br>
        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"maxLevel": 4,<br>
        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;"cubeResolution": 3496<br>
     }, <br>
-    
+```    
 예제를 참고하여 분할한 이미지 사용
 
 
